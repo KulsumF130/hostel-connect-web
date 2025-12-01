@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hostel Connect — Dashboard</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">HOSTEL CONNECT</div>
+      <div class="bell">🔔</div>
+    </header>
+
+    <main class="main">
+      <h2 class="page-title">Dashboard</h2>
+
+      <div class="grid">
+        <div class="card tile">
+          <span class="material-icons icon">hotel</span>
+          <div class="label">Room Allocation</div>
+        </div>
+        <div class="card tile">
+          <span class="material-icons icon">calendar_today</span>
+          <div class="label">Student Attendance</div>
+        </div>
+        <div class="card tile">
+          <span class="material-icons icon">payments</span>
+          <div class="label">Fee Payments</div>
+        </div>
+        <div class="card tile">
+          <span class="material-icons icon">people</span>
+          <div class="label">Occupancy</div>
+        </div>
+      </div>
+
+      <div class="card chart-card">
+        <canvas id="occupancyChart"></canvas>
+      </div>
+
+      <div class="grid">
+        <div class="card tile">
+          <span class="material-icons icon">build</span>
+          <div class="label">Maintenance Requests</div>
+        </div>
+        <div class="card tile">
+          <span class="material-icons icon">restaurant_menu</span>
+          <div class="label">Dining Menu</div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <div class="nav-item active"><span class="material-icons">dashboard</span><div>Dashboard</div></div>
+      <div class="nav-item"><span class="material-icons">apartment</span><div>Rooms</div></div>
+      <div class="nav-item"><span class="material-icons">people</span><div>Students</div></div>
+      <div class="nav-item"><span class="material-icons">person</span><div>Profile</div></div>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
